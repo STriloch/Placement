@@ -1,0 +1,11 @@
+A banking system needs a secure way to manage accounts. Every account has a unique account number, balance, and interest rate. The interest rate is common for all accounts but can change based on bank policies. The system should allow different types of accounts (e.g., Savings Account, Current Account) to define their own interest calculation logic.
+
+Implement an abstract class BankAccount with the following constraints:
+
+It should have private members: accountNumber and balance.
+It should have a constructor to initialize the account number and balance.
+It should have a static member: interestRate, which is common for all accounts.
+It should have an abstract method calculateInterest(), to be implemented differently by savings and current accounts.
+It should have a method to display account details, which should be the same for all account types.
+Question:
+Write a Java program implementing the above scenario, with a concrete class SavingsAccount that extends BankAccount and provides its own implementation of calculateInterest().
