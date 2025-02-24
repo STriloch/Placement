@@ -1,0 +1,24 @@
+You are designing a Smart Home Automation System where:
+
+The SmartHome class contains:
+
+A final static nested class Device, ensuring no subclass can modify device behavior.
+A final static nested class Configuration, holding final static settings like MAX_POWER_LIMIT.
+An abstract static class DeviceType, which:
+
+Defines a method getDeviceCategory(), implemented by LightDevice and FanDevice.
+Write a Java program that:
+
+Defines a SmartHome class with:
+A final static nested class Device that:
+Has final static int MAX_DEVICES = 50;
+Stores device details (ID and name).
+Includes a final method getDeviceInfo(), returning device details.
+A final static nested class Configuration, which:
+Contains a final static int MAX_POWER_LIMIT = 5000;
+Implements an abstract static class DeviceType with:
+A method getDeviceCategory(), implemented in LightDevice and FanDevice.
+The main() method should:
+Create a device and display its details.
+Display MAX_POWER_LIMIT from Configuration.
+Create instances of LightDevice and FanDevice, and print their categories.
